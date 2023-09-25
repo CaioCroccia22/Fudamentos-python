@@ -36,16 +36,29 @@ print("Hello World!")
 
 name = input("Digite o nome do jogo\n")
 #\n - quebra de linha
-print(name)
+
 
 yearLaunch = int(input("Digite o ano de lançamento do jogo\n"))
-print(yearLaunch)
+
 #Utiliza a função int porque o retorno da função input é sempre em string
 
 
 gamePrice = float(input("Digite o valor do jogo\n"))
-print(gamePrice)
+
 
 planeIncluded = bool(input("Está incluido no plano mensal?\n"))
-print(planeIncluded)
+
              
+#Concatenar valores#
+
+# Alternativa 1
+# print("O ano de lançamento do jogo é", yearLaunch)
+
+#Alternativa 2
+#Um único print para exibir todas as informações juntas
+print("O nome do jogo é:", name, "\n O ano de lançamento do jogo é:", yearLaunch)
+
+#Alternativa 3
+print(f"O nome do jogo é: {name} \n O ano de lançamento é: {yearLaunch}")
+
+
