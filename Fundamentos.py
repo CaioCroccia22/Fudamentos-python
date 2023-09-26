@@ -114,3 +114,15 @@ med = (n2 + n3 + n4 + n5) / 4
 print(f"A média é igual a {med}")
 
 #Detalhando a utilização de Strings
+
+gameName = "Fifa23"
+gameName2 = "fifa23"
+print(gameName == gameName2)
+
+#Conclusão python é uma linguagem case sensitive
+
+gameDescription = """
+    Fifa 23 é um jogo de futebol 
+    desenvolvido pela EA sports
+
+"""
