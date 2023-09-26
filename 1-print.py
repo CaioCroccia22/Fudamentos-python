@@ -62,3 +62,17 @@ print("O nome do jogo é:", name, "\n O ano de lançamento do jogo é:", yearLau
 print(f"O nome do jogo é: {name} \n O ano de lançamento é: {yearLaunch}")
 
 
+#Operadores aritméticos e Relacionais
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o primeiro número: "))
+
+#Aritmeticos
+sum = num1 + num2
+sub = num1 - num2
+div = num1 / num2
+mult = num1 * num2
+
+#Operação para saber o resto da divisão
+mod = num1 % num2
+exp = num1 ** num2
+print(sum, sub, div, mult, mod, exp)
