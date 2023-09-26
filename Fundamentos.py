@@ -115,9 +115,9 @@ print(f"A média é igual a {med}")
 
 #Detalhando a utilização de Strings
 
-gameName = "Fifa23"
-gameName2 = "fifa23"
-print(gameName == gameName2)
+# gameName = "Fifa23"
+# gameName2 = "fifa23"
+# print(gameName == gameName2)
 
 #Conclusão python é uma linguagem case sensitive
 
@@ -127,3 +127,22 @@ gameDescription = """
 
 """
 print(gameDescription)
+
+#Operações com strings
+
+gameName = "Fifa"
+gameYear = "23"
+
+
+#1 - Operação de concatenação de strings
+gameFullName = gameName + gameYear
+print(gameFullName)
+
+#2 - Operação de multiplicação de string
+
+line = "="
+
+print(line * 25)
+
+#3 - Procurar palavra dentro de String
+print("Fifa" in gameDescription)#Retorno em valor lógico
