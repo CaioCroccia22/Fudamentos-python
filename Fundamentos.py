@@ -193,3 +193,30 @@ print(str.replace("Olá", "Tchau")) #Substitui caracter
 
 print(str.split(',')) #Quebra uma string
 
+
+
+#Exercicio 
+#invertendo caracter
+
+str1 = "Fifa 23"
+
+char = str1[0].lower()
+
+new_str = str1.replace(char, '$')
+
+new_game = char + new_str[1:]
+
+print(new_game)
+
+#Troca de caracter
+st1 = 'cab' #zyb
+st2 = 'zyx' #cax
+
+st1_new = st1[2:] #b
+st2_new = st2[2:] #x
+
+st1_repl = st2[:2] + st1_new #zyb
+print(st1_repl) #zyb
+
+st2_repl = st1[:2] + st2_new #cax
+print(st2_repl)
