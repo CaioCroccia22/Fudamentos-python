@@ -94,55 +94,80 @@
 #Exercicio 1
 #Escreve um programa que leia um número e apresente seu antecessor e sucessor
 
-n1 = int(input("Qual número você deseja verificar? "))
+# n1 = int(input("Qual número você deseja verificar? "))
 
-suc = n1 + 1
-ant = n1 - 1
+# suc = n1 + 1
+# ant = n1 - 1
 
-print(f"O antecessor do número {n1} é {ant} e o sucessor é {suc}")
+# print(f"O antecessor do número {n1} é {ant} e o sucessor é {suc}")
 
-#Exercicio 2
-#Escreva um programa em python que leia 4 números e calcule a média entre eles
+# #Exercicio 2
+# #Escreva um programa em python que leia 4 números e calcule a média entre eles
 
-n2 = int(input("Qual número você deseja verificar a média? "))
-n3 = int(input("Qual número você deseja verificar a média? "))
-n4 = int(input("Qual número você deseja verificar a média? "))
-n5 = int(input("Qual número você deseja verificar a média? "))
+# n2 = int(input("Qual número você deseja verificar a média? "))
+# n3 = int(input("Qual número você deseja verificar a média? "))
+# n4 = int(input("Qual número você deseja verificar a média? "))
+# n5 = int(input("Qual número você deseja verificar a média? "))
 
-med = (n2 + n3 + n4 + n5) / 4
+# med = (n2 + n3 + n4 + n5) / 4
 
-print(f"A média é igual a {med}")
+# print(f"A média é igual a {med}")
 
-#Detalhando a utilização de Strings
+# #Detalhando a utilização de Strings
 
-# gameName = "Fifa23"
-# gameName2 = "fifa23"
-# print(gameName == gameName2)
+gameName = "Fifa23"
+# # gameName2 = "fifa23"
+# # print(gameName == gameName2)
 
-#Conclusão python é uma linguagem case sensitive
+# #Conclusão python é uma linguagem case sensitive
 
-gameDescription = """
-    Fifa 23 é um jogo de futebol 
-    desenvolvido pela EA sports
+# gameDescription = """
+#     Fifa 23 é um jogo de futebol 
+#     desenvolvido pela EA sports
 
-"""
-print(gameDescription)
+# """
+# print(gameDescription)
 
-#Operações com strings
+# #Operações com strings
 
-gameName = "Fifa"
-gameYear = "23"
+# gameName = "Fifa"
+# gameYear = "23"
 
 
-#1 - Operação de concatenação de strings
-gameFullName = gameName + gameYear
-print(gameFullName)
+# #1 - Operação de concatenação de strings
+# gameFullName = gameName + gameYear
+# print(gameFullName)
 
-#2 - Operação de multiplicação de string
+# #2 - Operação de multiplicação de string
 
-line = "="
+# line = "="
 
-print(line * 25)
+# print(line * 25)
 
-#3 - Procurar palavra dentro de String
-print("Fifa" in gameDescription)#Retorno em valor lógico
+# #3 - Procurar palavra dentro de String
+# print("Fifa" in gameDescription)#Retorno em valor lógico
+
+
+#Slice - fatiando strings
+# 1 - Busque toda string a partir da primeira posição
+#O primeiro indice é 0
+print(gameName[0:])
+
+#2 - Busque toda string até a última posição
+print(gameName[:7])
+
+#3 - Busque toda a string da 3 até a ultima posição
+print(gameName[2:])
+
+#string[inicio:fim:passo] - indice inicial posição 0 | indice final -1
+#passo = incremento. Por padrão o número é o 1
+
+#4 - Busquqe toda a string de 2 em 2
+print(gameName[::2])
+
+#5 - Busque todas string no indice impares
+print(gameName[1::2])
+
+#6 - Inverta uma string de trás para frente
+print(gameName[::-1])
+
