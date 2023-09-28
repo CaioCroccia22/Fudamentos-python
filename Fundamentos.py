@@ -171,3 +171,25 @@ print(gameName[1::2])
 #6 - Inverta uma string de trás para frente
 print(gameName[::-1])
 
+#Metodos em strigs
+
+str = "Olá python"
+
+print(str.upper()) #Retornar string em maiuscula
+
+print(str.lower()) #Retornar string em minuscula
+
+print(str.capitalize()) #Apanas primeira letra maiuscula
+
+print(str.title()) #Apenas a primeira letra em maiuscula
+
+print(str.center(20, "-")) #(qnt caracter, preenchimento)Retorna a string centralizada
+
+print(str.find("y")) #Retorna a posição que o caractere foi encontrado
+
+print(str.count("o")) #Conta os caracteres
+
+print(str.replace("Olá", "Tchau")) #Substitui caracter
+
+print(str.split(',')) #Quebra uma string
+
