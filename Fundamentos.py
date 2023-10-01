@@ -295,3 +295,29 @@ print(gamesSet)
 gamesSet.remove(True)
 gamesSet.remove(90.50)
 print(gamesSet)
+
+#Dicionario
+gameFifaDict = {
+    "name": "Fifa 23",
+    "yearLauch" : 2023,
+    "gamePrice" : 90.50,
+    "classification" :8.5,
+    "genre": ["esporte", "familia"]
+}
+print(gameFifaDict)
+print(type(gameFifaDict))
+print(len(gameFifaDict))
+
+# 1- recuperar um elemento do dicionario
+print(gameFifaDict.get('classification'))
+
+# 2 - Buscar apenas os valores do dicionario
+print(gameFifaDict.values())
+
+
+# 3 - Buscar apenas as chaves do dicionario
+print(gameFifaDict.keys)
+
+# 4 - Buscar itens do dicionario com chave e valor
+print(gameFifaDict.items())
+#Retorno em tuplas
