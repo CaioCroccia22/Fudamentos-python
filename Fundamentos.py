@@ -265,4 +265,12 @@ print(gameReset)
 # 6 - Remove todos os itens da lista
 gameList.clear()
 
-#Tupla
+#Tuplas
+gamesTuple = ("Fifa23", "Read Dead 2", 
+              "GTA V", "Mario Bros", "The Legend of Zelda")
+
+# Não é possivel adicionar valores na tupla
+# Não é possivel remover valores na tupla
+# Não é possível ordenar valores em uma tupla
+
+#Set
