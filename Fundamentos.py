@@ -274,3 +274,24 @@ gamesTuple = ("Fifa23", "Read Dead 2",
 # Não é possível ordenar valores em uma tupla
 
 #Set
+
+gamesSet = {"Fifa23", "Read Dead 2", 
+              "GTA V", "Mario Bros", "The Legend of Zelda"}
+
+# Não é possivel recuperar valores via fatiamento ou slice
+
+#1 - Buscar o tamanho do set
+print(len(gamesSet))
+
+# 2 - True e 1 são o mesmo valor
+exampleSet = {"Fifa 23", True, 1, 90.50}
+print(exampleSet)
+
+# 3 - Adicionar item de outro set
+gamesSet.update(exampleSet)
+print(gamesSet)
+
+# 4 - Remover um item no set
+gamesSet.remove(True)
+gamesSet.remove(90.50)
+print(gamesSet)
