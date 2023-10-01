@@ -220,3 +220,31 @@ print(st1_repl) #zyb
 
 st2_repl = st1[:2] + st2_new #cax
 print(st2_repl)
+
+
+#Listas 
+#Lista dá para agrupar as informações em uma única variável
+gameFifa = ["Fifa 23", 2023, 90.50, True]
+
+#1 - Buscar os dois primeiros itens da lista
+print(gameFifa[0:2])
+
+
+#2 - Buscar o ultimo item da lista
+print(gameFifa[-1])
+
+#3 - Buscar item até uma determinada posição
+print(gameFifa[:3])
+
+#4 - Buscar itens de uma posição em diante
+print(gameFifa[1:4])
+
+gameList = ["Resident Evil", "Fifa 23", 
+            "The Legend of Zelda", "Red Dead 2", "Mario Bros"]
+
+#Metodos
+# 1 - Saber o tamanho da lista
+print(len(gameList))
+
+# 2 - Recuperar um item da lista pelo Indice
+print(gameList.index("Mario Bros"))
