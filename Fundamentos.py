@@ -248,3 +248,21 @@ print(len(gameList))
 
 # 2 - Recuperar um item da lista pelo Indice
 print(gameList.index("Mario Bros"))
+
+# 3 - Adicionar item ao final da lista
+gameList.append("GTA V")
+print(gameList)
+
+# 4 - Ordenar Lista
+gameList.sort()
+print(gameList)
+
+# 5 - Copiar os itens de uma lista para outra4
+gameReset = gameList.copy()
+gameReset.remove("GTA V")
+print(gameReset)
+
+# 6 - Remove todos os itens da lista
+gameList.clear()
+
+#Tupla
