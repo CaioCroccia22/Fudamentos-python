@@ -321,3 +321,7 @@ print(gameFifaDict.keys)
 # 4 - Buscar itens do dicionario com chave e valor
 print(gameFifaDict.items())
 #Retorno em tuplas
+
+#5 - Adicionar itens do dicionario
+gameFifaDict["Players"] = 2
+print(gameFifaDict)
