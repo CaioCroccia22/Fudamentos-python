@@ -148,186 +148,189 @@ gameName = "Fifa23"
 # print("Fifa" in gameDescription)#Retorno em valor lógico
 
 
-#Slice - fatiando strings
-# 1 - Busque toda string a partir da primeira posição
-#O primeiro indice é 0
-print(gameName[0:])
+# #Slice - fatiando strings
+# # 1 - Busque toda string a partir da primeira posição
+# #O primeiro indice é 0
+# print(gameName[0:])
 
-#2 - Busque toda string até a última posição
-print(gameName[:7])
+# #2 - Busque toda string até a última posição
+# print(gameName[:7])
 
-#3 - Busque toda a string da 3 até a ultima posição
-print(gameName[2:])
+# #3 - Busque toda a string da 3 até a ultima posição
+# print(gameName[2:])
 
-#string[inicio:fim:passo] - indice inicial posição 0 | indice final -1
-#passo = incremento. Por padrão o número é o 1
+# #string[inicio:fim:passo] - indice inicial posição 0 | indice final -1
+# #passo = incremento. Por padrão o número é o 1
 
-#4 - Busquqe toda a string de 2 em 2
-print(gameName[::2])
+# #4 - Busquqe toda a string de 2 em 2
+# print(gameName[::2])
 
-#5 - Busque todas string no indice impares
-print(gameName[1::2])
+# #5 - Busque todas string no indice impares
+# print(gameName[1::2])
 
-#6 - Inverta uma string de trás para frente
-print(gameName[::-1])
+# #6 - Inverta uma string de trás para frente
+# print(gameName[::-1])
 
-#Metodos em strigs
+# #Metodos em strigs
 
-str = "Olá python"
+# str = "Olá python"
 
-print(str.upper()) #Retornar string em maiuscula
+# print(str.upper()) #Retornar string em maiuscula
 
-print(str.lower()) #Retornar string em minuscula
+# print(str.lower()) #Retornar string em minuscula
 
-print(str.capitalize()) #Apanas primeira letra maiuscula
+# print(str.capitalize()) #Apanas primeira letra maiuscula
 
-print(str.title()) #Apenas a primeira letra em maiuscula
+# print(str.title()) #Apenas a primeira letra em maiuscula
 
-print(str.center(20, "-")) #(qnt caracter, preenchimento)Retorna a string centralizada
+# print(str.center(20, "-")) #(qnt caracter, preenchimento)Retorna a string centralizada
 
-print(str.find("y")) #Retorna a posição que o caractere foi encontrado
+# print(str.find("y")) #Retorna a posição que o caractere foi encontrado
 
-print(str.count("o")) #Conta os caracteres
+# print(str.count("o")) #Conta os caracteres
 
-print(str.replace("Olá", "Tchau")) #Substitui caracter
+# print(str.replace("Olá", "Tchau")) #Substitui caracter
 
-print(str.split(',')) #Quebra uma string
-
-
-
-#Exercicio 
-#invertendo caracter
-
-str1 = "Fifa 23"
-
-char = str1[0].lower()
-
-new_str = str1.replace(char, '$')
-
-new_game = char + new_str[1:]
-
-print(new_game)
-
-#Troca de caracter
-st1 = 'cab' #zyb
-st2 = 'zyx' #cax
-
-st1_new = st1[2:] #b
-st2_new = st2[2:] #x
-
-st1_repl = st2[:2] + st1_new #zyb
-print(st1_repl) #zyb
-
-st2_repl = st1[:2] + st2_new #cax
-print(st2_repl)
+# print(str.split(',')) #Quebra uma string
 
 
-#Listas 
-#Lista dá para agrupar as informações em uma única variável
-gameFifa = ["Fifa 23", 2023, 90.50, True]
 
-#1 - Buscar os dois primeiros itens da lista
-print(gameFifa[0:2])
+# #Exercicio 
+# #invertendo caracter
 
+# str1 = "Fifa 23"
 
-#2 - Buscar o ultimo item da lista
-print(gameFifa[-1])
+# char = str1[0].lower()
 
-#3 - Buscar item até uma determinada posição
-print(gameFifa[:3])
+# new_str = str1.replace(char, '$')
 
-#4 - Buscar itens de uma posição em diante
-print(gameFifa[1:4])
+# new_game = char + new_str[1:]
 
-gameList = ["Resident Evil", "Fifa 23", 
-            "The Legend of Zelda", "Red Dead 2", "Mario Bros"]
+# print(new_game)
 
-#Metodos
-# 1 - Saber o tamanho da lista
-print(len(gameList))
+# #Troca de caracter
+# st1 = 'cab' #zyb
+# st2 = 'zyx' #cax
 
-# 2 - Recuperar um item da lista pelo Indice
-print(gameList.index("Mario Bros"))
+# st1_new = st1[2:] #b
+# st2_new = st2[2:] #x
 
-# 3 - Adicionar item ao final da lista
-gameList.append("GTA V")
-print(gameList)
+# st1_repl = st2[:2] + st1_new #zyb
+# print(st1_repl) #zyb
 
-# 4 - Ordenar Lista
-gameList.sort()
-print(gameList)
-
-# 5 - Copiar os itens de uma lista para outra4
-gameReset = gameList.copy()
-gameReset.remove("GTA V")
-print(gameReset)
-
-# 6 - Remove todos os itens da lista
-gameList.clear()
-
-#Tuplas
-gamesTuple = ("Fifa23", "Read Dead 2", 
-              "GTA V", "Mario Bros", "The Legend of Zelda")
-
-# Não é possivel adicionar valores na tupla
-# Não é possivel remover valores na tupla
-# Não é possível ordenar valores em uma tupla
-
-#Set
-
-gamesSet = {"Fifa23", "Read Dead 2", 
-              "GTA V", "Mario Bros", "The Legend of Zelda"}
-
-# Não é possivel recuperar valores via fatiamento ou slice
-
-#1 - Buscar o tamanho do set
-print(len(gamesSet))
-
-# 2 - True e 1 são o mesmo valor
-exampleSet = {"Fifa 23", True, 1, 90.50}
-print(exampleSet)
-
-# 3 - Adicionar item de outro set
-gamesSet.update(exampleSet)
-print(gamesSet)
-
-# 4 - Remover um item no set
-gamesSet.remove(True)
-gamesSet.remove(90.50)
-print(gamesSet)
-
-#Dicionario
-gameFifaDict = {
-    "name": "Fifa 23",
-    "yearLauch" : 2023,
-    "gamePrice" : 90.50,
-    "classification" :8.5,
-    "genre": ["esporte", "familia"]
-}
-print(gameFifaDict)
-print(type(gameFifaDict))
-print(len(gameFifaDict))
-
-# 1- recuperar um elemento do dicionario
-print(gameFifaDict.get('classification'))
-
-# 2 - Buscar apenas os valores do dicionario
-print(gameFifaDict.values())
+# st2_repl = st1[:2] + st2_new #cax
+# print(st2_repl)
 
 
-# 3 - Buscar apenas as chaves do dicionario
-print(gameFifaDict.keys)
+# #Listas 
+# #Lista dá para agrupar as informações em uma única variável
+# gameFifa = ["Fifa 23", 2023, 90.50, True]
 
-# 4 - Buscar itens do dicionario com chave e valor
-print(gameFifaDict.items())
-#Retorno em tuplas
+# #1 - Buscar os dois primeiros itens da lista
+# print(gameFifa[0:2])
 
-#5 - Adicionar itens do dicionario
-gameFifaDict["Players"] = 2
-print(gameFifaDict)
+
+# #2 - Buscar o ultimo item da lista
+# print(gameFifa[-1])
+
+# #3 - Buscar item até uma determinada posição
+# print(gameFifa[:3])
+
+# #4 - Buscar itens de uma posição em diante
+# print(gameFifa[1:4])
+
+# gameList = ["Resident Evil", "Fifa 23", 
+#             "The Legend of Zelda", "Red Dead 2", "Mario Bros"]
+
+# #Metodos
+# # 1 - Saber o tamanho da lista
+# print(len(gameList))
+
+# # 2 - Recuperar um item da lista pelo Indice
+# print(gameList.index("Mario Bros"))
+
+# # 3 - Adicionar item ao final da lista
+# gameList.append("GTA V")
+# print(gameList)
+
+# # 4 - Ordenar Lista
+# gameList.sort()
+# print(gameList)
+
+# # 5 - Copiar os itens de uma lista para outra4
+# gameReset = gameList.copy()
+# gameReset.remove("GTA V")
+# print(gameReset)
+
+# # 6 - Remove todos os itens da lista
+# gameList.clear()
+
+# #Tuplas
+# gamesTuple = ("Fifa23", "Read Dead 2", 
+#               "GTA V", "Mario Bros", "The Legend of Zelda")
+
+# # Não é possivel adicionar valores na tupla
+# # Não é possivel remover valores na tupla
+# # Não é possível ordenar valores em uma tupla
+
+# #Set
+
+# gamesSet = {"Fifa23", "Read Dead 2", 
+#               "GTA V", "Mario Bros", "The Legend of Zelda"}
+
+# # Não é possivel recuperar valores via fatiamento ou slice
+
+# #1 - Buscar o tamanho do set
+# print(len(gamesSet))
+
+# # 2 - True e 1 são o mesmo valor
+# exampleSet = {"Fifa 23", True, 1, 90.50}
+# print(exampleSet)
+
+# # 3 - Adicionar item de outro set
+# gamesSet.update(exampleSet)
+# print(gamesSet)
+
+# # 4 - Remover um item no set
+# gamesSet.remove(True)
+# gamesSet.remove(90.50)
+# print(gamesSet)
+
+# #Dicionario
+# gameFifaDict = {
+#     "name": "Fifa 23",
+#     "yearLauch" : 2023,
+#     "gamePrice" : 90.50,
+#     "classification" :8.5,
+#     "genre": ["esporte", "familia"]
+# }
+# print(gameFifaDict)
+# print(type(gameFifaDict))
+# print(len(gameFifaDict))
+
+# # 1- recuperar um elemento do dicionario
+# print(gameFifaDict.get('classification'))
+
+# # 2 - Buscar apenas os valores do dicionario
+# print(gameFifaDict.values())
+
+
+# # 3 - Buscar apenas as chaves do dicionario
+# print(gameFifaDict.keys)
+
+# # 4 - Buscar itens do dicionario com chave e valor
+# print(gameFifaDict.items())
+# #Retorno em tuplas
+
+# #5 - Adicionar itens do dicionario
+# gameFifaDict["Players"] = 2
+# print(gameFifaDict)
 
 
 #Dicionarios Aninhados
+#Um dicionario dentro de outro
+import pprint
+
 gamesDicti = {
     "Resident Evil 4" : {
         "yearLaunch" : 2023,
@@ -345,3 +348,28 @@ gamesDicti = {
         "genre" : ["aventura"]
     }
 }
+pp = pprint.PrettyPrinter(depth=4)
+pp.pprint(gamesDicti)
+
+#1 - Buscar informação dentro de um dicionário aninhado
+print("O genero de Mario Odyssey é:", gamesDicti["Mario Odyssey"]["genre"])
+
+
+# 2 - Adicionar novo item
+gamesDicti["Mario Odyssey"]["players"] =  1
+print(gamesDicti["Mario Odyssey"])
+
+# 3 - Excluir itens de um dicionario
+del gamesDicti["Resident Evil 4"]
+pp.pprint(gamesDicti)
+
+#Utilizando Condições com if/Else
+name = input("Digite o nome do jogo\n")
+yearLaunch = int(input("Digite o ano de lançamento do jogo\n"))
+classification = float(input("Digite a nota de classificação\n"))
+
+
+if classification > 8.0 or yearLaunch > 2010:
+    print(f"O jogo {name} é bom")
+else:
+    print(f"O jogo {name} é ruim")
