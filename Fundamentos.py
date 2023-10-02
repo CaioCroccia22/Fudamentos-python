@@ -327,49 +327,96 @@ gameName = "Fifa23"
 # print(gameFifaDict)
 
 
-#Dicionarios Aninhados
-#Um dicionario dentro de outro
-import pprint
+# #Dicionarios Aninhados
+# #Um dicionario dentro de outro
+# import pprint
 
-gamesDicti = {
-    "Resident Evil 4" : {
-        "yearLaunch" : 2023,
-        "classification" : 9.8,
-        "genre" : ["Ação", "aventura"]
-    },
-    "Mario Odyssey" : {
-        "yearLaunch" : 2017,
-        "classification" : 10.0,
-        "genre" : ["aventura"]
-    },
-    "Donkey Kong country" : {
-        "yearLaunch" : 2018,
-        "classification" : 8.0,
-        "genre" : ["aventura"]
-    }
-}
-pp = pprint.PrettyPrinter(depth=4)
-pp.pprint(gamesDicti)
+# gamesDicti = {
+#     "Resident Evil 4" : {
+#         "yearLaunch" : 2023,
+#         "classification" : 9.8,
+#         "genre" : ["Ação", "aventura"]
+#     },
+#     "Mario Odyssey" : {
+#         "yearLaunch" : 2017,
+#         "classification" : 10.0,
+#         "genre" : ["aventura"]
+#     },
+#     "Donkey Kong country" : {
+#         "yearLaunch" : 2018,
+#         "classification" : 8.0,
+#         "genre" : ["aventura"]
+#     }
+# }
+# pp = pprint.PrettyPrinter(depth=4)
+# pp.pprint(gamesDicti)
 
-#1 - Buscar informação dentro de um dicionário aninhado
-print("O genero de Mario Odyssey é:", gamesDicti["Mario Odyssey"]["genre"])
-
-
-# 2 - Adicionar novo item
-gamesDicti["Mario Odyssey"]["players"] =  1
-print(gamesDicti["Mario Odyssey"])
-
-# 3 - Excluir itens de um dicionario
-del gamesDicti["Resident Evil 4"]
-pp.pprint(gamesDicti)
-
-#Utilizando Condições com if/Else
-name = input("Digite o nome do jogo\n")
-yearLaunch = int(input("Digite o ano de lançamento do jogo\n"))
-classification = float(input("Digite a nota de classificação\n"))
+# #1 - Buscar informação dentro de um dicionário aninhado
+# print("O genero de Mario Odyssey é:", gamesDicti["Mario Odyssey"]["genre"])
 
 
-if classification > 8.0 or yearLaunch > 2010:
-    print(f"O jogo {name} é bom")
+# # 2 - Adicionar novo item
+# gamesDicti["Mario Odyssey"]["players"] =  1
+# print(gamesDicti["Mario Odyssey"])
+
+# # 3 - Excluir itens de um dicionario
+# del gamesDicti["Resident Evil 4"]
+# pp.pprint(gamesDicti)
+
+# #Utilizando Condições com if/Else
+# name = input("Digite o nome do jogo\n")
+# yearLaunch = int(input("Digite o ano de lançamento do jogo\n"))
+# classification = float(input("Digite a nota de classificação\n"))
+
+
+# if classification > 8.0 and yearLaunch > 2010:
+#     print(f"O jogo {name} é bom")
+# else:
+#     print(f"O jogo {name} é ruim")
+
+
+# #Calculadora
+# num1 = int(input("Digite o número a ser calculado:\n"))
+# num2 = int(input("Digite outro número a ser calculado:\n"))
+# operation = input("Digite a operação a ser realizada: (+ - * /)\n")
+
+# if operation == "+":
+#     result = num1 + num2
+#     print({f"A soma é:{result}"})
+# elif operation == "-":
+#     result = num1 - num2
+#     print(f"A subtração é {result}")
+# elif operation == "*":
+#     result = num1 * num2
+#     print(f"A multiplicação é {result}")
+# elif operation == "/":
+#     result = num1 / num2
+#     print(f"O resto da divisão é {result}")
+# else:
+#     print("Operação invalida")
+
+#Limitação das casas decimais {result:.2f} - Limitado duas casas decimais
+#Exercicios
+#Calculo da distancia
+distance = float(input("Qual distancia será percorrida(em km)?\n"))
+
+if distance <= 200:
+    value = 0.5 * distance
 else:
-    print(f"O jogo {name} é ruim")
+    value = distance * 0.35
+
+print(f"O valor da corrida será {value}")
+
+#Salario
+wage = float(input("Quanto você recebe?\n"))
+
+if wage >= 1.250:  
+    percentage = wage * 0.10
+    
+else:
+    percentage = wage * 0.15
+
+newWage = percentage + wage
+print(f"O valor do seu salário é {newWage}")
+
+
