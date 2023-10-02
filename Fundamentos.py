@@ -325,3 +325,23 @@ print(gameFifaDict.items())
 #5 - Adicionar itens do dicionario
 gameFifaDict["Players"] = 2
 print(gameFifaDict)
+
+
+#Dicionarios Aninhados
+gamesDicti = {
+    "Resident Evil 4" : {
+        "yearLaunch" : 2023,
+        "classification" : 9.8,
+        "genre" : ["Ação", "aventura"]
+    },
+    "Mario Odyssey" : {
+        "yearLaunch" : 2017,
+        "classification" : 10.0,
+        "genre" : ["aventura"]
+    },
+    "Donkey Kong country" : {
+        "yearLaunch" : 2018,
+        "classification" : 8.0,
+        "genre" : ["aventura"]
+    }
+}
