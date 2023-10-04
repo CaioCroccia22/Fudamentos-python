@@ -398,25 +398,113 @@ gameName = "Fifa23"
 #Limitação das casas decimais {result:.2f} - Limitado duas casas decimais
 #Exercicios
 #Calculo da distancia
-distance = float(input("Qual distancia será percorrida(em km)?\n"))
+# distance = float(input("Qual distancia será percorrida(em km)?\n"))
 
-if distance <= 200:
-    value = 0.5 * distance
-else:
-    value = distance * 0.35
+# if distance <= 200:
+#     value = 0.5 * distance
+# else:
+#     value = distance * 0.35
 
-print(f"O valor da corrida será {value}")
+# print(f"O valor da corrida será {value}")
 
-#Salario
-wage = float(input("Quanto você recebe?\n"))
+# #Salario
+# wage = float(input("Quanto você recebe?\n"))
 
-if wage >= 1.250:  
-    percentage = wage * 0.10
+# if wage >= 1.250:  
+#     percentage = wage * 0.10
     
-else:
-    percentage = wage * 0.15
+# else:
+#     percentage = wage * 0.15
 
-newWage = percentage + wage
-print(f"O valor do seu salário é {newWage}")
+# newWage = percentage + wage
+# print(f"O valor do seu salário é {newWage}")
 
+
+# #Laço de repetição for
+# #É por meio do laço de repetição que intera valores de um colection
+# #É possível fazer com lista,tuplas,set, dicionario
+# gameList = ["Resident Evil", "Fifa 23", 
+#      "The Legend of Zelda", "Red Dead 2", "Mario Bros"]
+
+
+# # 1 - Iterando valores de uma lista
+# for game in gameList:
+#     print(game)
+
+# # 2 -Quando a codição for atendida, loop será encerrado
+# for game in gameList:
+#     if game == "Red Dead 2": #Ele para na interação
+#         break
+#     print(game)
+
+# # 3 - Quando a condição for atendida, o loop vai para a próxima interação
+# for game in gameList:
+#     if game == "Red Dead 2": # Ele pula a interação
+#         continue
+#     print(game)
+
+
+# # 4 - Avaliação do jogo
+
+# # O range - é de 0 até o valor limite(X)
+# gameName = input("Digite o nome do jogo\n")
+# gameRating = int(input("Digite quantas avaliações deseja fazer no jogo\n"))
+
+# sum = 0
+# for i in range(gameRating):
+#     note = float(input("Digite a nota para o jogo\n"))
+#     sum += note #sum = sum + note
+# print(f"A média de avaliação do jogo {gameName} é {sum/gameRating}")
+
+
+# #Laço de repetição While
+# gameName = input("Digite o nome do jogo\n")
+# qtdRating = 0
+# totalRating = 0
+# rating = 0
+# average = 0
+# #As variaveis são inicializados com 0
+# #Por ser de tipagem dinamica o interpretador precisa de um valor
+
+
+# while (rating != -1):
+#     rating = float(input("Informe a nota do jogo\n"))
+#     if (rating != -1):
+#         totalRating += rating
+#         qtdRating += 1
+#         average = totalRating / qtdRating
+# print(f"Média das avaliações do jogo {gameName} é {average}")
+
+# #List Comprehesion
+# # 1 -Liste valores de 0 a 10 que sejam menor do que 4
+# for i in range(10):
+#     if i <= 4:
+#         print(i)
+
+# #É possível fazer esse código usando uma linha de código - List Comprehension
+# listNumbers = [i for i in range(10) if i < 4]
+# print(listNumbers)
+
+# # Jogos que possuem a letra a
+# list = [x for x in gameList if "a" in x]
+# print(list)
+
+#Exercicio
+# -> Faça um programa para escrever a contagem regressiva e disparar um "beep"
+import winsound
+x = 10
+while x >= 0:
+    print(x)
+    x -= 1
+winsound.Beep(2500, 500)
+
+
+# -> Faça um programa que calcule a tabuada de um número com valores iniciais e finais
+numero1 = int(input("Tabuada de: \n"))
+numero2 = int(input("Começa em: \n"))
+numero3 = int(input("Até: \n"))
+x = numero2
+while x <= numero3:
+    print(f"A tabuado de {numero1} x {x} = {numero1 * x}")
+    x += 1
 
