@@ -115,7 +115,7 @@
 
 # #Detalhando a utilização de Strings
 
-gameName = "Fifa23"
+# gameName = "Fifa23"
 # # gameName2 = "fifa23"
 # # print(gameName == gameName2)
 
@@ -491,58 +491,58 @@ gameName = "Fifa23"
 
 #Exercicio
 # -> Faça um programa para escrever a contagem regressiva e disparar um "beep"
-import winsound
-x = 10
-while x >= 0:
-    print(x)
-    x -= 1
-winsound.Beep(2500, 500)
+# import winsound
+# x = 10
+# while x >= 0:
+#     print(x)
+#     x -= 1
+# winsound.Beep(2500, 500)
 
 
-# -> Faça um programa que calcule a tabuada de um número com valores iniciais e finais
-numero1 = int(input("Tabuada de: \n"))
-numero2 = int(input("Começa em: \n"))
-numero3 = int(input("Até: \n"))
-x = numero2
-while x <= numero3:
-    print(f"A tabuado de {numero1} x {x} = {numero1 * x}")
-    x += 1
+# # -> Faça um programa que calcule a tabuada de um número com valores iniciais e finais
+# numero1 = int(input("Tabuada de: \n"))
+# numero2 = int(input("Começa em: \n"))
+# numero3 = int(input("Até: \n"))
+# x = numero2
+# while x <= numero3:
+#     print(f"A tabuado de {numero1} x {x} = {numero1 * x}")
+#     x += 1
 
-#Funções
-#Reaproveita execução de blocos sem duplicar o código
+# #Funções
+# #Reaproveita execução de blocos sem duplicar o código
 
-def welcome():
-    print("Hello World")
-
-
-welcome()
-
-def sum():
-    return 5 + 4
-print(sum())
-
-# Função para cadastrar um jogo
-def create_game():
-    name = input("Digite o nome do jogo:\n")
-    yearLaunch = int(input("Digite o ano que o jogo foi lançado\n"))
-    gamePrice = float(input("Digite o preço do jogo\n"))
-
-    print(f"{name} - R$ {gamePrice}")
+# def welcome():
+#     print("Hello World")
 
 
-create_game()
-create_game()
+# welcome()
 
-#Funções com Argumentos
-def rating_games(qtdRating):
-    gameName = input("Digite o nome do jogo: \n")
-    sum = 0
-    for i in range(qtdRating):
-        note = float(input("Digite a nota para o jogo: \n"))
-        sum += note
-    print(f"A média de avaliação do jogo {gameName} é {sum / qtdRating}")
-rating = int(input("Digite quantas avaliações deseja fazer no jogo\n"))
-rating_games(rating)
+# def sum():
+#     return 5 + 4
+# print(sum())
+
+# # Função para cadastrar um jogo
+# def create_game():
+#     name = input("Digite o nome do jogo:\n")
+#     yearLaunch = int(input("Digite o ano que o jogo foi lançado\n"))
+#     gamePrice = float(input("Digite o preço do jogo\n"))
+
+#     print(f"{name} - R$ {gamePrice}")
+
+
+# create_game()
+# create_game()
+
+# #Funções com Argumentos
+# def rating_games(qtdRating):
+#     gameName = input("Digite o nome do jogo: \n")
+#     sum = 0
+#     for i in range(qtdRating):
+#         note = float(input("Digite a nota para o jogo: \n"))
+#         sum += note
+#     print(f"A média de avaliação do jogo {gameName} é {sum / qtdRating}")
+# rating = int(input("Digite quantas avaliações deseja fazer no jogo\n"))
+# rating_games(rating)
 
 #Função Recursivo
 #Quando dentro dela é feito uma ou mais chamadas dentro dela mesma
@@ -564,5 +564,31 @@ def somaTotal(number):
     else:
         return (number + somaTotal(number - 1))
     
-sum = input("Digite o numero para fazer a soma total\n")
-print(f"A soma do número {sum} é: {somaTotal(sum)}")
+soma = int(input("Digite o numero para fazer a soma total\n"))
+print(f"A soma do número {soma} é: {somaTotal(soma)}")
+
+#Utilizando função com Args Kwargs
+#*Args
+#Utilizamos quando não temos certeza de quantos argumentos queremos ter em uma função
+#Os argumentos são passados como uma tupla
+#*Kwargs - Além dos valores podemos passar também as respectivas chaves para cada argumento
+
+#   1 -Soma de Numeros
+def soma(*num):
+    sum_total = 0
+    for n in num:
+        sum_total += n
+    print(f"A soma é: {sum_total}")
+
+soma(7)
+soma(7,6,3,4,2)
+
+def presentation(**data):
+    for key, value in data.items():
+        print(f"{key} - {value}")
+
+presentation(name="Pyhton", category="Backend", level="Iniciante")
+presentation(name="Visão computacional com Python", category="IA", level="Avançado")
+presentation(name="Dashbord com Dash", category="Data Science", level="Intermediário")
+
+
