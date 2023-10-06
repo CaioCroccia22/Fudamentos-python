@@ -543,3 +543,26 @@ def rating_games(qtdRating):
     print(f"A média de avaliação do jogo {gameName} é {sum / qtdRating}")
 rating = int(input("Digite quantas avaliações deseja fazer no jogo\n"))
 rating_games(rating)
+
+#Função Recursivo
+#Quando dentro dela é feito uma ou mais chamadas dentro dela mesma
+#Ex: Fatorial 3 -> 3 * 2 * 1
+#1 - Fatorial
+def factorial(numero):
+    if numero == 1:
+        return 1
+    else:
+        return (numero * factorial(numero - 1))
+
+num = int(input("Digite o número para o fatorial: \n"))
+print(f"O fatorial do {num} é: {factorial(num)}")
+
+# 2 - A soma total de um número
+def somaTotal(number):
+    if number == 1:
+        return 1
+    else:
+        return (number + somaTotal(number - 1))
+    
+sum = input("Digite o numero para fazer a soma total\n")
+print(f"A soma do número {sum} é: {somaTotal(sum)}")
