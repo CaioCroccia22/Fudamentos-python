@@ -516,3 +516,30 @@ def welcome():
 
 
 welcome()
+
+def sum():
+    return 5 + 4
+print(sum())
+
+# Função para cadastrar um jogo
+def create_game():
+    name = input("Digite o nome do jogo:\n")
+    yearLaunch = int(input("Digite o ano que o jogo foi lançado\n"))
+    gamePrice = float(input("Digite o preço do jogo\n"))
+
+    print(f"{name} - R$ {gamePrice}")
+
+
+create_game()
+create_game()
+
+#Funções com Argumentos
+def rating_games(qtdRating):
+    gameName = input("Digite o nome do jogo: \n")
+    sum = 0
+    for i in range(qtdRating):
+        note = float(input("Digite a nota para o jogo: \n"))
+        sum += note
+    print(f"A média de avaliação do jogo {gameName} é {sum / qtdRating}")
+rating = int(input("Digite quantas avaliações deseja fazer no jogo\n"))
+rating_games(rating)
