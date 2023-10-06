@@ -508,3 +508,11 @@ while x <= numero3:
     print(f"A tabuado de {numero1} x {x} = {numero1 * x}")
     x += 1
 
+#Funções
+#Reaproveita execução de blocos sem duplicar o código
+
+def welcome():
+    print("Hello World")
+
+
+welcome()
