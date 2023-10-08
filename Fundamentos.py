@@ -611,6 +611,29 @@ print(reverse("Olá mundo"))
 
 #Exercicio
 #Conta letras maiusculas e minusculas
-#-> Escreva uma funçãoo python que receba uma 
+#-> Escreva uma função python que receba uma 
 # string e conte o número de letras maiusculas e minusculas desta string
 
+def check_char(text):
+    type = {"Uppercase": 0, "Lowercase": 0}
+    for char in text:
+        if char.isupper():
+            type["Uppercase"] += 1
+        elif char.islower():
+            type["Lowercase"] += 1
+    print("Texto original:", text)
+    print("Número de letra maiúsculas:", type["Uppercase"])
+    print()
+#Lista númeors pares e impares de uma lista
+def showList(*number):
+    for n in number:
+        listpar = []
+        listimpar = []
+        if n % 2 == 0:
+            listpar.append(n)
+        else:
+            listimpar.append(n)
+    print(listimpar, listpar)
+
+sequence = input("Digite a sequencia de números:\n")
+showList(sequence)
