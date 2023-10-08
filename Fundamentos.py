@@ -544,51 +544,73 @@
 # rating = int(input("Digite quantas avaliações deseja fazer no jogo\n"))
 # rating_games(rating)
 
-#Função Recursivo
-#Quando dentro dela é feito uma ou mais chamadas dentro dela mesma
-#Ex: Fatorial 3 -> 3 * 2 * 1
-#1 - Fatorial
-def factorial(numero):
-    if numero == 1:
-        return 1
-    else:
-        return (numero * factorial(numero - 1))
+# #Função Recursivo
+# #Quando dentro dela é feito uma ou mais chamadas dentro dela mesma
+# #Ex: Fatorial 3 -> 3 * 2 * 1
+# #1 - Fatorial
+# def factorial(numero):
+#     if numero == 1:
+#         return 1
+#     else:
+#         return (numero * factorial(numero - 1))
 
-num = int(input("Digite o número para o fatorial: \n"))
-print(f"O fatorial do {num} é: {factorial(num)}")
+# num = int(input("Digite o número para o fatorial: \n"))
+# print(f"O fatorial do {num} é: {factorial(num)}")
 
-# 2 - A soma total de um número
-def somaTotal(number):
-    if number == 1:
-        return 1
-    else:
-        return (number + somaTotal(number - 1))
+# # 2 - A soma total de um número
+# def somaTotal(number):
+#     if number == 1:
+#         return 1
+#     else:
+#         return (number + somaTotal(number - 1))
     
-soma = int(input("Digite o numero para fazer a soma total\n"))
-print(f"A soma do número {soma} é: {somaTotal(soma)}")
+# soma = int(input("Digite o numero para fazer a soma total\n"))
+# print(f"A soma do número {soma} é: {somaTotal(soma)}")
 
-#Utilizando função com Args Kwargs
-#*Args
-#Utilizamos quando não temos certeza de quantos argumentos queremos ter em uma função
-#Os argumentos são passados como uma tupla
-#*Kwargs - Além dos valores podemos passar também as respectivas chaves para cada argumento
+# #Utilizando função com Args Kwargs
+# #*Args
+# #Utilizamos quando não temos certeza de quantos argumentos queremos ter em uma função
+# #Os argumentos são passados como uma tupla
+# #*Kwargs - Além dos valores podemos passar também as respectivas chaves para cada argumento
 
-#   1 -Soma de Numeros
-def soma(*num):
-    sum_total = 0
-    for n in num:
-        sum_total += n
-    print(f"A soma é: {sum_total}")
+# #   1 -Soma de Numeros
+# def soma(*num):
+#     sum_total = 0
+#     for n in num:
+#         sum_total += n
+#     print(f"A soma é: {sum_total}")
 
-soma(7)
-soma(7,6,3,4,2)
+# soma(7)
+# soma(7,6,3,4,2)
 
-def presentation(**data):
-    for key, value in data.items():
-        print(f"{key} - {value}")
+# def presentation(**data):
+#     for key, value in data.items():
+#         print(f"{key} - {value}")
 
-presentation(name="Pyhton", category="Backend", level="Iniciante")
-presentation(name="Visão computacional com Python", category="IA", level="Avançado")
-presentation(name="Dashbord com Dash", category="Data Science", level="Intermediário")
+# presentation(name="Pyhton", category="Backend", level="Iniciante")
+# presentation(name="Visão computacional com Python", category="IA", level="Avançado")
+# presentation(name="Dashbord com Dash", category="Data Science", level="Intermediário")
 
+
+#Função Lambda
+
+# 1 - Função de potencia de número
+power = lambda num: num **2
+
+#2 - Função paraa verificar se um número é par
+pair = lambda x: x % 2 ==0
+
+#3 - Função que divide um número por outro
+divNum = lambda x, y : x /y
+
+#4 - Função que inverte uma string
+reverse = lambda s: s[::-1]
+
+print(power(5))
+print(reverse("Olá mundo"))
+
+#Exercicio
+#Conta letras maiusculas e minusculas
+#-> Escreva uma funçãoo python que receba uma 
+# string e conte o número de letras maiusculas e minusculas desta string
 
