@@ -623,17 +623,33 @@ def check_char(text):
             type["Lowercase"] += 1
     print("Texto original:", text)
     print("Número de letra maiúsculas:", type["Uppercase"])
-    print()
-#Lista númeors pares e impares de uma lista
-def showList(*number):
-    for n in number:
-        listpar = []
-        listimpar = []
-        if n % 2 == 0:
-            listpar.append(n)
-        else:
-            listimpar.append(n)
-    print(listimpar, listpar)
+    print("Número de letras minúsculas:", type["Lowercase"])
 
-sequence = input("Digite a sequencia de números:\n")
-showList(sequence)
+word = input("Digite a frase que deseja:\n")
+check_char(word)
+
+#Lista números pares e impares de uma lista
+
+def check_number(numbers):
+    pairs = []
+    odd = []
+    for n in numbers:
+        if n % 2 == 0:
+            pairs.append(n)
+        else:
+            odd.append(n)
+
+sequence = list(input("Digite os números:\n"))
+print(check_number(sequence))
+
+#Exercicio final do módulo
+#Gerenciamento de jogadores e times
+# -> Escreva um código em python que realize o gerenciamento de jogadores
+#Siga os requisitos:
+#1 - A opção de listar os times deve mostrar o indice , o nome e a quantindade de jogadores
+#2 - A opção de adicionar um time deve pedir um nome para o time que será cadastrado
+#3 - A opção de remover um time deve pedir o indice especifico do time que foi cadastrado
+#4 - A opção de adicionar um jogador em um time deve pedir um indice do time que foi cadastrado
+#5 - A opção de remover um jogador em um time deve pedir um indice do time que foi cadastrado e utilizar
+#esse indice para remover o jogador cadastrado no time
+#6 - A opção de listar 
