@@ -630,17 +630,17 @@ check_char(word)
 
 #Lista números pares e impares de uma lista
 
-def check_number(numbers):
-    pairs = []
-    odd = []
-    for n in numbers:
-        if n % 2 == 0:
-            pairs.append(n)
-        else:
-            odd.append(n)
+# def check_number(numbers):
+#     pairs = []
+#     odd = []
+#     for n in numbers:
+#         if n % 2 == 0:
+#             pairs.append(n)
+#         else:
+#             odd.append(n)
 
-sequence = list(input("Digite os números:\n"))
-print(check_number(sequence))
+# sequence = list(input("Digite os números:\n"))
+# print(check_number(sequence))
 
 #Exercicio final do módulo
 #Gerenciamento de jogadores e times
@@ -652,4 +652,16 @@ print(check_number(sequence))
 #4 - A opção de adicionar um jogador em um time deve pedir um indice do time que foi cadastrado
 #5 - A opção de remover um jogador em um time deve pedir um indice do time que foi cadastrado e utilizar
 #esse indice para remover o jogador cadastrado no time
-#6 - A opção de listar 
+#6 - A opção de listar os jogadores de um time deve ser informado o indice de um time
+# e listar os jogadores que foram associados a ele.
+
+def createTeam(Team):
+    for key, value in Team.items():
+        print(f'Chave: {key}, Valor: {value}')
+    
+Time = {'indice' : 1,
+        'name': "O legais",
+        'qtdJogadores': 3,
+        }
+
+createTeam(Time)
