@@ -594,39 +594,39 @@
 
 #Função Lambda
 
-# 1 - Função de potencia de número
-power = lambda num: num **2
+# # 1 - Função de potencia de número
+# power = lambda num: num **2
 
-#2 - Função paraa verificar se um número é par
-pair = lambda x: x % 2 ==0
+# #2 - Função paraa verificar se um número é par
+# pair = lambda x: x % 2 ==0
 
-#3 - Função que divide um número por outro
-divNum = lambda x, y : x /y
+# #3 - Função que divide um número por outro
+# divNum = lambda x, y : x /y
 
-#4 - Função que inverte uma string
-reverse = lambda s: s[::-1]
+# #4 - Função que inverte uma string
+# reverse = lambda s: s[::-1]
 
-print(power(5))
-print(reverse("Olá mundo"))
+# print(power(5))
+# print(reverse("Olá mundo"))
 
 #Exercicio
 #Conta letras maiusculas e minusculas
 #-> Escreva uma função python que receba uma 
 # string e conte o número de letras maiusculas e minusculas desta string
 
-def check_char(text):
-    type = {"Uppercase": 0, "Lowercase": 0}
-    for char in text:
-        if char.isupper():
-            type["Uppercase"] += 1
-        elif char.islower():
-            type["Lowercase"] += 1
-    print("Texto original:", text)
-    print("Número de letra maiúsculas:", type["Uppercase"])
-    print("Número de letras minúsculas:", type["Lowercase"])
+# def check_char(text):
+#     type = {"Uppercase": 0, "Lowercase": 0}
+#     for char in text:
+#         if char.isupper():
+#             type["Uppercase"] += 1
+#         elif char.islower():
+#             type["Lowercase"] += 1
+#     print("Texto original:", text)
+#     print("Número de letra maiúsculas:", type["Uppercase"])
+#     print("Número de letras minúsculas:", type["Lowercase"])
 
-word = input("Digite a frase que deseja:\n")
-check_char(word)
+# word = input("Digite a frase que deseja:\n")
+# check_char(word)
 
 #Lista números pares e impares de uma lista
 
@@ -655,13 +655,23 @@ check_char(word)
 #6 - A opção de listar os jogadores de um time deve ser informado o indice de um time
 # e listar os jogadores que foram associados a ele.
 
-def createTeam(Team):
-    for key, value in Team.items():
-        print(f'Chave: {key}, Valor: {value}')
-    
-Time = {'indice' : 1,
-        'name': "O legais",
-        'qtdJogadores': 3,
-        }
 
-createTeam(Time)
+def listTeam(qtdTime):
+    Teams = {}
+    for i in range(qtdTime):
+        i += 1
+        name = input("Digite o nome do time:\n")
+        name = {}
+        players = int(input("Digite a quantidade de jogadores\n"))
+        name["players"] = players
+        Teams.update({"Time": name})
+        print(Teams)
+        
+    
+        
+
+listTeam(2)
+
+
+
+
