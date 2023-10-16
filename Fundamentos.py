@@ -656,18 +656,23 @@
 # e listar os jogadores que foram associados a ele.
 
 
-def listTeam(qtdTime):
+
+def listTeam(qtdTimes):
     Teams = {}
-    for i in range(qtdTime):
-        i += 1
-        name = input("Digite o nome do time:\n")
-        name = {}
-        players = int(input("Digite a quantidade de jogadores\n"))
-        name["players"] = players
-        Teams.update({"Time": name})
-        print(Teams)
-        
-    
+    Team = {}
+    for i in range(qtdTimes):
+        for Team in Teams:
+            name = input("Digite o nome do jogo\n: ")
+            players = input("Digite a quantidade de jogadores\n: ")
+            Team["name"]= name
+            Team["players"] = players
+            print(Team)
+            Teams["Team"] = Team
+            print(Teams)
+
+
+
+ 
         
 
 listTeam(2)
